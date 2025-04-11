@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chinchilla Central</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #fact-text {
+      opacity: 1;
+      transition: opacity 1s ease-in-out;
+      font-style: italic;
+      font-size: 0.95rem;
+      margin-top: 0.5rem;
+    }
+    .section-title {
+      text-align: center;
+      margin: 2rem 0 1rem;
+      font-size: 1.6rem;
+      color: #5f3dc4;
+    }
+    .catalog-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+      max-width: 1200px;
+      margin: 0 auto 3rem;
+    }
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+.logout-btn:hover {
+      background-color: #d32f2f;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div style="flex: 1; text-align: center;">
+      <h1>🐾 Welcome To Chinchilla Central</h1>
+      <p id="fact-text">💡 Fun Fact: Loading fact...</p>
+    </div>
+    <button id="toggle-mode"><h3><em>Dark Mode🌙</em></h3></button>
+  </header>
+
+<p>
+<section class="image-slider-container">
+  <div class="slider">
+    <div class="slides">
+      <div class="slide">
+        <img src="chinchilla.png" alt="Chinchilla Breed 1">
+        <div class="slide-info">
+          <h2>American Chinchilla
+          <p><strong>The American Chinchilla rabbit is a large, hardy, and gentle breed known for its soft, silky coat and good mothering instincts. Mature bucks typically weigh 9-11 pounds, while does weigh 10-12 pounds. They are versatile, can be shown, and are also bred for meat and fur. The breed is credited with contributing significantly to the development of other rabbit breeds. </p></strong>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="chinchilla3.png" alt="Chinchilla Breed 3">
+        <div class="slide-info">
+          <h2>Ebony Chinchilla</h2>
+          <p><strong>Ebony chinchillas are a type of chinchilla with a distinctive dark coat color, ranging from dark gray to black. They are known for their fluffy, soft fur and are a popular choice among pet owners. Ebony chinchillas can be both heterozygous (carrying the ebony gene) and homozygous (having two copies of the ebony gene), which can affect the coat's darkness.
+</p></strong>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="chinchilla2.png" alt="Chinchilla Breed 2">
+        <div class="slide-info">
+          <h2>White Chinchilla</h2>
+          <p><strong>White chinchillas are a popular variation of the long-tailed chinchilla (Chinchilla lanigera) and other chinchilla species. They are a domestic variation, meaning they are not found in the wild. White chinchillas come in various shades, including white mosaic, pink white, tan white, and white violet. These rodents are known for their soft, dense fur, which is a characteristic of the chinchilla species as a whole. 
+</p></strong>
+        </div>
+      </div>
+
+ <div class="slide">
+        <img src="chinchilla4.png" alt="Chinchilla Breed 2">
+        <div class="slide-info">
+          <h2>Short-Tailed Chinchilla</h2>
+          <p><strong>The short-tailed chinchilla is a small rodent part of the Chinchillidae family and is classified as an endangered species by the IUCN. Originating in South America, the chinchilla is part of the genus Chinchilla, which is separated into two species: the long-tailed chinchilla and the short-tailed chinchilla.
+</p></strong>
+        </div>
+      </div>
+
+
+ <div class="slide">
+        <img src="chinchilla5.png" alt="Chinchilla Breed 2">
+        <div class="slide-info">
+          <h2>Chocolate Chinchilla</h2>
+          <p><strong>Achieving a chocolate coat requires generations of breeding ebony and beige chinchillas together. As each generation is bred, the babies develop darker and darker fur until it looks just like chocolate. Some chocolate chinchillas develop darker spots on their bodies, while others may have chocolate fur that fades away into silvery gray tones on the tail.
+</p></strong>
+        </div>
+      </div>
+
+
+ <div class="slide">
+        <img src="chinchilla6.png" alt="Chinchilla Breed 2">
+        <div class="slide-info">
+          <h2>Long-Tailed Chinchilla</h2>
+          <p><strong>The long-tailed chinchilla, also called the Chilean, coastal, common, or lesser chinchilla, is one of two species of rodent from the genus Chinchilla: the other species being C. chinchilla. Both species are endangered in the wild after historically being hunted for their soft hair coats.
+</p></strong>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <div class="arrows">
+    <span class="arrow left" onclick="moveSlide(-1)">&#10094;</span>
+    <span class="arrow right" onclick="moveSlide(1)">&#10095;</span>
+  </div>
+</section>
+</p>
+  <section id="controls">
+    <input type="text" id="searchBar" placeholder="Search products...">
+    <select id="sortSelect">
+      <option value="">Sort by...</option>
+      <option value="name">Name (A-Z)</option>
+      <option value="price">Price (Low to High)</option>
+    </select>
+  </section>
+
+  <section>
+    <h2 class="section-title">🧼 Care and Hygiene</h2>
+    <div id="section-care" class="catalog-section">
+ 
+     <div class="card">
+  <img src="${item.img}" alt="${item.name}" onerror="this.onerror=null;this.src='https://via.placeholder.com/300x200?text=No+Image';" />
+  <h3><a href="${item.link}" target="_blank" style="color: #5f3dc4; text-decoration: none;">${item.name}</a></h3>
+  <p>Category: ${item.category}</p>
+  <p>Price: $${item.price.toFixed(2)}</p>
+  <p>${item.description}</p>
+  
+  <div class="button-container">
+    <a href="${item.link}" target="_blank">
+      <button class="btn-53">
+        <div class="original">View</div>
+        <div class="letters">
+          <span>V</span>
+          <span>I</span>
+          <span>E</span>
+          <span>W</span>
+        </div>
+      </button>
+    </a>
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">🏠 Cage Accessories</h2>
+    <div id="section-accessories" class="catalog-section">
+      <!-- More product entries with buttons -->
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">🍓 Food and Treats</h2>
+    <div id="section-food" class="catalog-section">
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">🧳 Chinchilla Necessities</h2>
+    <div id="section-necessities" class="catalog-section">
+    </div>
+  </section>
+
+  <footer style="position: sticky; bottom: 0; background: inherit; padding: 1rem 0;">
+    <p>Created with ❤️ by a Chinchilla Enthusiast</p>
+  </footer>
+<div class="logout-container" style="position:center; bottom:0; padding: 1rem 0;">
+  <div class="logout">
+   <a href="login.html"> <span>Logout</span></a>
+  </div>
+</div>
+
+</button>
+  <script>
+    const funFacts = [
+      "💡Chinchillas take dust baths instead of water baths to stay clean!",
+      "🐭A group of chinchillas is called a herd!",
+      "😱Chinchillas can jump up to 6 feet in the air!",
+      "🐇They have around 60 hairs growing from each follicle.",
+      "💛Chinchillas originated in the Andes mountains of South America.",
+      "🍓They have no sweat glands—making them very sensitive to heat."
+    ];
+
+    const factText = document.getElementById("fact-text");
+    let currentIndex = 0;
+
+    function rotateFact() {
+      factText.style.opacity = 0;
+      setTimeout(() => {
+        factText.textContent = funFacts[currentIndex];
+        currentIndex = (currentIndex + 1) % funFacts.length;
+        factText.style.opacity = 1;
+      }, 1000);
+    }
+
+    rotateFact();
+    setInterval(rotateFact, 6000);
+  </script>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
