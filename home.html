@@ -218,23 +218,29 @@
     "🐾 Explore Products Every Chinchilla Owner Needs!",
     "🐾 Welcome To Chinchilla Central"
   ];
+
   let index = 0;
 
   welcomeMessage.style.transition = "opacity 1s ease-in-out";
   welcomeMessage.textContent = messages[index];
 
-  setInterval(() => {
+  function fadeNextMessage() {
+    if (index >= messages.length - 1) return; // Stop rotating after last message
+
     welcomeMessage.style.opacity = 0;
     setTimeout(() => {
-      index = (index + 1) % messages.length;
+      index++;
       welcomeMessage.textContent = messages[index];
       welcomeMessage.style.opacity = 1;
-    }, 1000);
-  }, 5000); // every 5 seconds
+
+      setTimeout(fadeNextMessage, 5000); // Delay before next fade
+    }, 1000); // Fade out duration
+  }
+
+  setTimeout(fadeNextMessage, 5000); // Start the first rotation after 5 sec
 </script>
 
 </body>
 </html>
-
 </body>
 </html>
