@@ -451,14 +451,15 @@ footer,
   opacity: 1;
 }
 
+.bubble-search.centered {
+  margin: 0 auto;
+  justify-content: center;
+}
+
 body.dark .bubble-search {
   background-color: #3050b4;
 }
 
 body.dark .bubble-search input {
   color: #e0e0e0;
-}
-.bubble-search.centered {
-  margin: 0 auto;
-  justify-content: center;
 }
