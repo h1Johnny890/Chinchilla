@@ -111,30 +111,36 @@ box-shadow: -4px 0 10px rgba(0, 0, 0, 0.3);
 
     <div class="right-side">
       <h2>Log In</h2>
-      <form id="login-form">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required placeholder="Enter your email" />
+      
+<form id="login-form">
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" required placeholder="Enter your name" />
 
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" required placeholder="Enter your password" />
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" required placeholder="Enter your email" />
 
-        <button type="submit">Enter</button>
+  <label for="password">Password</label>
+  <input type="password" id="password" name="password" required placeholder="Enter your password" />
+
+  <button type="submit">Enter</button>
+
       </form>
-      <a href="login.html" class="cancelbtn">Cancel</a>   
+<div style="margin-top: 10px;"><a href="login.html" class="cancelbtn">Cancel</a></div>   
  </div>
   </div>
 
-  <script>
-    // Handle form submission and redirect
-    document.getElementById('login-form').addEventListener('submit', function (event) {
-      event.preventDefault(); // Prevent form submission
+  
+<script>
+  document.getElementById('login-form').addEventListener('submit', function (event) {
+    event.preventDefault();
+    const name = document.getElementById('name').value;
+    if (name.trim()) {
+      localStorage.setItem('chinchillaUserName', name);
+      window.location.href = "index.html";
+    }
+  });
+</script>
 
-      // Optionally: Add form validation and submission logic here
-
-      // Redirect to the chinchilla page (index.html)
-      window.location.href = "index.html"; // Replace with your actual ChinChilla page URL
-    });
-  </script>
 
 </body>
 </html>
