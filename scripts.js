@@ -293,19 +293,4 @@ function showSlides() {
   slidesContainer.style.transform = `translateX(-${slideIndex * 100}%)`;
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  const darkModePref = localStorage.getItem('darkMode');
-  if (darkModePref === 'enabled') {
-    document.body.classList.add('dark');
-  }
-
-  const darkModeButton = document.getElementById('toggle-mode');
-  darkModeButton.addEventListener('click', () => {
-    document.body.classList.toggle('dark');
-    if (document.body.classList.contains('dark')) {
-      localStorage.setItem('darkMode', 'enabled');
-    } else {
-      localStorage.setItem('darkMode', 'disabled');
-    }
-  });
-});
+showSlides();
