@@ -416,7 +416,7 @@ footer,
   width: 60px;
   height: 60px;
   padding: 1rem;
-  background-color: #4070f4;
+  background-color: #90dbf4;
   border-radius: 9999px;
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.08);
   overflow: hidden;
@@ -439,7 +439,7 @@ footer,
   background: transparent;
   border: none;
   outline: none;
-  color: white;
+  color: black;
   font-size: 1.25rem;
   padding-left: 1rem;
   width: 100%;
@@ -457,9 +457,22 @@ footer,
 }
 
 body.dark .bubble-search {
-  background-color: #3050b4;
+  background-color: #bde0fe;
 }
 
 body.dark .bubble-search input {
   color: #e0e0e0;
 }
+.bubble-search:focus-within {
+  animation: pulseGlow 0.6s ease-out;
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(189, 224, 254, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 0 15px rgba(189, 224, 254, 0);
+  }
+}
+
