@@ -408,3 +408,57 @@ footer,
 .logout:hover span {
   color: #e0aaff;
 }
+
+
+.bubble-search {
+  display: flex;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  background-color: #4070f4;
+  border-radius: 9999px;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: width 0.3s ease;
+  margin: 0 auto;
+}
+
+.bubble-search:hover {
+  width: 270px;
+}
+
+.bubble-search .search-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bubble-search input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1.25rem;
+  padding-left: 1rem;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.bubble-search:hover input {
+  opacity: 1;
+}
+
+body.dark .bubble-search {
+  background-color: #3050b4;
+}
+
+body.dark .bubble-search input {
+  color: #e0e0e0;
+}
+.bubble-search.centered {
+  margin: 0 auto;
+  justify-content: center;
+}
