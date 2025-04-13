@@ -254,20 +254,6 @@ searchBar.addEventListener('input', (e) => {
   displayCatalog(filteredItems);
 });
 
-// Sort functionality
-const sortSelect = document.getElementById('sortSelect');
-sortSelect.addEventListener('change', (e) => {
-  const sortBy = e.target.value;
-  let sortedItems = [...catalogData];
-
-  if (sortBy === 'name') {
-    sortedItems.sort((a, b) => a.name.localeCompare(b.name));
-  } else if (sortBy === 'price') {
-    sortedItems.sort((a, b) => a.price - b.price);
-  }
-
-  displayCatalog(sortedItems);
-});
 
 let slideIndex = 0;
 
