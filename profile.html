@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<!---------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Profile</title>
+  <link rel="stylesheet" href="style.css" />
+<!---------------------------------------------------------------------------->
+</head>
+<!--------------------------------------------------------------------------->
+
+<!---------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------->
+<body class="profile-page">
+<!---------------------------------------------------------------------------->
+  <section class="cta-section">
+    <div class="cta-content">
+      <div class="profile-img-wrapper">
+        <img src="profile.png" alt="Profile Image" />
+      </div>
+      <h2>👤 Your Profile Info</h2>
+      <p><strong>Name:</strong> <span id="user-name">Loading...</span></p>
+      <p><strong>Email:</strong> <span id="user-email">Loading...</span></p>
+     <p><strong>Password:</strong> 
+  <span id="user-password">••••••••</span>
+  <span id="toggle-profile-pass" style="cursor: pointer; margin-left: 0.5rem;">👁️</span>
+</p>
+
+      <br>
+      <a href="home.html"><button class="back">Back to Home</button></a>
+    </div>
+<!---------------------------------------------------------------------------->
+  </section>
+<!--------------------------------------------------------------------------->
+
+
+<!-------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------->
+ <script>
+  const name = localStorage.getItem('chinchillaUserName') || 'John Doe';
+  const email = localStorage.getItem('chinchillaUserEmail') || 'johndoe@email.com';
+  const password = localStorage.getItem('chinchillaUserPassword') || 'password123';
+
+  document.getElementById('user-name').textContent = name;
+  document.getElementById('user-email').textContent = email;
+
+  const passDisplay = document.getElementById('user-password');
+  const toggleBtn = document.getElementById('toggle-profile-pass');
+
+  let visible = false;
+  passDisplay.textContent = '*'.repeat(password.length);
+
+  toggleBtn.addEventListener('click', () => {
+    visible = !visible;
+    passDisplay.textContent = visible ? password : '*'.repeat(password.length);
+    toggleBtn.textContent = visible ? '🙈' : '👁️';
+  });
+<!-------------------------------------------------------------------------------------->
+</script>
+<!-------------------------------------------------------------------------------------->
+
+
+<!---------------------------------------------------------------------------->
+</body>
+</html>
+
