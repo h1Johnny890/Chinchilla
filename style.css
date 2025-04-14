@@ -40,13 +40,37 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   background-color: #f7e1d7;
   padding: 1rem 2rem;
   border-radius: 12px;
   margin-bottom: 1.5rem;
   box-shadow: 0 4px 12px rgba(134, 118, 231, 0.2);
   opacity: 0;
-  animation: fadeIn 1.5s forwards 0.5s; /* Fade-in with delay */
+  animation: fadeIn 1.5s forwards 0.5s;
+}
+
+.header-left,
+.header-center,
+.header-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-left {
+  justify-content: flex-start;
+}
+
+.header-right {
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+#user-name-display {
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 body.dark header {
@@ -475,3 +499,146 @@ body.dark .bubble-search input {
     box-shadow: 0 0 0 15px rgba(189, 224, 254, 0);
   }
 }
+.hero {
+  background-image: url('chinchillapic.jpg'); /* or your actual image path */
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  height: 650px;
+  display: flex; /* NEW */
+  align-items: center; /* NEW - center content vertically */
+  justify-content: center; /* Optional - center horizontally */
+  text-align: center;
+  color: white;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero-btn {
+  background-color: #5f3dc4;
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+.hero-btn:hover {
+  background-color: #3b2c82;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.slider-info-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 3rem auto;
+  flex-wrap: wrap;
+}
+
+.image-slider-container {
+  flex: 1;
+  max-width: 600px;
+}
+
+.chinchilla-info {
+  flex: 1;
+  max-width: 7000px;
+  background-color: #fff0f6;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  font-size: 1.05rem;
+}
+
+.chinchilla-info h2 {
+  color: #5f3dc4;
+  margin-bottom: 1rem;
+}
+
+.chinchilla-info p {
+  line-height: 1.6;
+}
+
+/* Keep your existing .slides and .arrow styles */
+.slide-info { display: none; } /* Remove individual descriptions */
+
+.cta-section {
+  background: linear-gradient(135deg, #fcbfef, #bde0fe);
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: 20px;
+  margin: 4rem auto 2rem;
+  max-width: 1000px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 2s ease-in-out;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #5f3dc4;
+  text-shadow: 1px 1px 2px #fff;
+}
+
+.cta-content p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #4b4b4b;
+}
+
+.cta-btn {
+  background-color: #5f3dc4;
+  color: white;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #3b2c82;
+  transform: scale(1.07);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+
