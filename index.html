@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!---------------------------------------------------------------------------->
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -181,7 +182,9 @@
       cursor: pointer;
     }
   </style>
+<!---------------------------------------------------------------------------->
 </head>
+<!---------------------------------------------------------------------------->
 <body>
 
   <div class="container" id="container">
@@ -226,6 +229,7 @@
     </div>
   </div>
 
+<!-------------------------------------------------------------------------------------->
  <script>
   const signUpButton = document.getElementById('signUp');
   const signInButton = document.getElementById('signIn');
@@ -248,9 +252,13 @@
     togglePassword.textContent = type === "password" ? "👁️" : "🙈";
   });
 
+  // ✅ LOGIN FORM
   document.getElementById('login-form').addEventListener('submit', function (event) {
     event.preventDefault();
-    const password = passwordInput.value;
+
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const password = document.getElementById('password').value.trim();
     const regex = /^(?=.*\d)(?=.*[!@#$%^&*]).{6,}$/;
 
     if (!regex.test(password)) {
@@ -258,12 +266,15 @@
       return;
     }
 
-    const name = document.getElementById('name').value;
+    // ✅ Save all data
     localStorage.setItem('chinchillaUserName', name);
+    localStorage.setItem('chinchillaUserEmail', email);
+    localStorage.setItem('chinchillaUserPassword', password);
+
     window.location.href = "home.html";
   });
 
-  // ✅ SIGN-UP VALIDATION
+  // ✅ SIGN-UP FORM
   document.getElementById('signup-form').addEventListener('submit', function (event) {
     event.preventDefault();
 
@@ -282,11 +293,17 @@
       return;
     }
 
+    // ✅ Save all data
     localStorage.setItem('chinchillaUserName', name);
+    localStorage.setItem('chinchillaUserEmail', email);
+    localStorage.setItem('chinchillaUserPassword', password);
+
     window.location.href = "home.html";
   });
+<!-------------------------------------------------------------------------------------->
 </script>
 
 
+<!---------------------------------------------------------------------------->
 </body>
 </html>
