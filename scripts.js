@@ -68,7 +68,7 @@ const catalogData = [
   },
 {
    name: "Wood Hideaway",
-   category: "accessories",
+   category: "Accessories",
    section: "accessories",
    price: 8.99,
    img: "house.png",
@@ -117,7 +117,7 @@ const catalogData = [
 
 {
    name: "Large Two Story Cage Habitat",
-   category: "necessities",
+   category: "Necessities",
    section: "necessities",
    price: 161.69,
    img: "cage.png",
@@ -127,7 +127,7 @@ const catalogData = [
 
 {
    name:"Chinchilla Feeder",
-   category:"necessities",
+   category:"Necessities",
    section:"necessities",
    price:14.99,
    img:"feeder.png",
@@ -136,7 +136,7 @@ const catalogData = [
 },
 {
    name:"Water Bottle",
-   category:"necessities",
+   category:"Necessities",
    section:"necessities",
    price:5.99,
    img:"water.png",
@@ -145,7 +145,7 @@ const catalogData = [
 },
 {
    name:"Soft Bedding Shavings",
-   category:"necessities",
+   category:"Necessities",
    section:"necessities",
    price:34.99,
    img:"shaving.png",
@@ -155,7 +155,7 @@ const catalogData = [
 
 {
 name:"Disposable Training Pads",
-   category:"necessities",
+   category:"Necessities",
    section:"necessities",
    price: 19.99,
    img:"pads.png",
@@ -164,12 +164,22 @@ name:"Disposable Training Pads",
 },
 {
    name:"Granite Chiller Stone",
-   category: "necessities",
+   category: "Necessities",
    section: "necessities",
    price: 9.99,
    img:"stone.png",
    link: "https://www.amazon.com/Kaytee-Chinchilla-Chiller-Granite-Stone/dp/B000A7707O?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=ATVPDKIKX0DER&gQT=1",
    description: "Granite stones, like those used as cooling ledges for chinchillas, are designed to help keep chinchillas cool due to granite's natural ability to maintain a surface temperature below room temperature. These stones are typically made of a smooth, washable granite and simulate the natural rocky environment chinchillas may have lived in. They are a simple way for chinchillas to cool down, especially when they are unable to sweat.",
+},
+
+{
+   name:"Chinchilla Vitamins C",
+   category:"Food",
+   section:"food",
+   price: 7.99,
+   img:"vitamins.png",
+   link:"https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwj7zI_oldiMAxWvLEQIHQQeF_0YABAHGgJkeg&co=1&gclid=CjwKCAjw5PK_BhBBEiwAL7GTPX8sqB0s27EY5MuXiamAvybDLBUZqyr0f8Pl-aRCMrIN0XD2qSAZGBoC54EQAvD_BwE&ohost=www.google.com&cid=CAESVuD2PNlzeWQLy99pAtdNaNgfoyGOQids3SU9QX9_HHFqovcZjjP5_gMc1hsSZF_ytfXP8r61Ut-o6mVIrVrxMkHjWUzjoSQM_Mi1gJyybOLb9bc9z1RC&sig=AOD64_0yxrap7-_3vE4WHhUAaGVTy2uHWA&ctype=5&q=&ved=2ahUKEwjKzIvoldiMAxUgOkQIHegcDacQ9aACKAB6BAgIEEY&adurl=:",
+   description:"Oxbow Natural Science Vitamin C for chinchillas, gerbils, hamsters, guinea pigs, rabbits, rats, and mice is a hay-based, high fiber supplement containing essential stabilized Vitamin C that guinea pigs need and other animals benefit from during times of stress, illness or recovery. Product of USA.",
 },
 
 ];
