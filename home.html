@@ -41,77 +41,54 @@
 </head>
 <body>
 
-  <header>
-    <div style="flex: 1; text-align: center;">
-      <h1 id="welcome-message">🐾 Welcome To Chinchilla Central</h1>
-      <p id="fact-text">💡 Fun Fact: Loading fact...</p>
-    </div>
-    <button id="toggle-mode"><h3><em>Dark Mode🌙</em></h3></button>
-  </header>
+ <header>
+  <div class="header-left">
+    <h3 id="user-name-display">🐾 Welcome, friend!</h3>
+  </div>
+  <div class="header-center">
+    <h1>Chinchilla Central</h1>
+    <p id="fact-text">💡 Fun Fact: Loading fact...</p>
+  </div>
+  <div class="header-right">
+    <button id="toggle-mode">Dark Mode 🌙</button>
+    <a href="#" title="View Cart" style="font-size: 1.5rem; margin-left: 1rem;">🛒</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>🐭 Everything Your Chinchilla Needs</h1>
+    <p>Soft bedding, healthy treats, fun toys, and more!</p>
+    <a href="#section-care"><button class="hero-btn">Shop Now</button></a>
+  </div>
+</section>
 
 <p>
-<section class="image-slider-container">
-  <div class="slider">
-    <div class="slides">
-      <div class="slide">
-        <img src="chinchilla.png" alt="Chinchilla Breed 1">
-        <div class="slide-info">
-          <h2>American Chinchilla
-          <p><strong>The American Chinchilla rabbit is a large, hardy, and gentle breed known for its soft, silky coat and good mothering instincts. Mature bucks typically weigh 9-11 pounds, while does weigh 10-12 pounds. They are versatile, can be shown, and are also bred for meat and fur. The breed is credited with contributing significantly to the development of other rabbit breeds. </p></strong>
-        </div>
+<section class="slider-info-wrapper">
+  <div class="image-slider-container">
+    <div class="slider">
+      <div class="slides">
+        <div class="slide"><img src="chinchilla.png" alt="Chinchilla 1"></div>
+        <div class="slide"><img src="chinchilla2.png" alt="Chinchilla 2"></div>
+        <div class="slide"><img src="chinchilla3.png" alt="Chinchilla 3"></div>
+        <div class="slide"><img src="chinchilla4.png" alt="Chinchilla 4"></div>
+        <div class="slide"><img src="chinchilla5.png" alt="Chinchilla 5"></div>
+        <div class="slide"><img src="chinchilla6.png" alt="Chinchilla 6"></div>
+        <div class="slide"><img src="chinchilla7.png" alt="Chinchilla 7"></div>
+	<div class="slide"><img src="chinchilla8.png" alt="Chinchilla 8"></div>
+	<div class="slide"><img src="chinchilla9.png" alt="Chinchilla 9"></div>	
+	<div class="slide"><img src="chinchilla10.png" alt="Chinchilla 10"></div>
       </div>
-      <div class="slide">
-        <img src="chinchilla3.png" alt="Chinchilla Breed 3">
-        <div class="slide-info">
-          <h2>Ebony Chinchilla</h2>
-          <p><strong>Ebony chinchillas are a type of chinchilla with a distinctive dark coat color, ranging from dark gray to black. They are known for their fluffy, soft fur and are a popular choice among pet owners. Ebony chinchillas can be both heterozygous (carrying the ebony gene) and homozygous (having two copies of the ebony gene), which can affect the coat's darkness.
-</p></strong>
-        </div>
-      </div>
-      <div class="slide">
-        <img src="chinchilla2.png" alt="Chinchilla Breed 2">
-        <div class="slide-info">
-          <h2>White Chinchilla</h2>
-          <p><strong>White chinchillas are a popular variation of the long-tailed chinchilla (Chinchilla lanigera) and other chinchilla species. They are a domestic variation, meaning they are not found in the wild. White chinchillas come in various shades, including white mosaic, pink white, tan white, and white violet. These rodents are known for their soft, dense fur, which is a characteristic of the chinchilla species as a whole. 
-</p></strong>
-        </div>
-      </div>
-
- <div class="slide">
-        <img src="chinchilla4.png" alt="Chinchilla Breed 2">
-        <div class="slide-info">
-          <h2>Short-Tailed Chinchilla</h2>
-          <p><strong>The short-tailed chinchilla is a small rodent part of the Chinchillidae family and is classified as an endangered species by the IUCN. Originating in South America, the chinchilla is part of the genus Chinchilla, which is separated into two species: the long-tailed chinchilla and the short-tailed chinchilla.
-</p></strong>
-        </div>
-      </div>
-
-
- <div class="slide">
-        <img src="chinchilla5.png" alt="Chinchilla Breed 2">
-        <div class="slide-info">
-          <h2>Chocolate Chinchilla</h2>
-          <p><strong>Achieving a chocolate coat requires generations of breeding ebony and beige chinchillas together. As each generation is bred, the babies develop darker and darker fur until it looks just like chocolate. Some chocolate chinchillas develop darker spots on their bodies, while others may have chocolate fur that fades away into silvery gray tones on the tail.
-</p></strong>
-        </div>
-      </div>
-
-
- <div class="slide">
-        <img src="chinchilla6.png" alt="Chinchilla Breed 2">
-        <div class="slide-info">
-          <h2>Long-Tailed Chinchilla</h2>
-          <p><strong>The long-tailed chinchilla, also called the Chilean, coastal, common, or lesser chinchilla, is one of two species of rodent from the genus Chinchilla: the other species being C. chinchilla. Both species are endangered in the wild after historically being hunted for their soft hair coats.
-</p></strong>
-        </div>
-      </div>
-
-
+    </div>
+    <div class="arrows">
+      <span class="arrow left" onclick="moveSlide(-1)">&#10094;</span>
+      <span class="arrow right" onclick="moveSlide(1)">&#10095;</span>
     </div>
   </div>
-  <div class="arrows">
-    <span class="arrow left" onclick="moveSlide(-1)">&#10094;</span>
-    <span class="arrow right" onclick="moveSlide(1)">&#10095;</span>
+
+  <div class="chinchilla-info">
+    <h2>🐭 About Chinchillas</h2>
+    <p>Originating from the Andes Mountains of South America, Chinchillas are small, soft-furred rodents. They're known for their ultra-dense fur, requiring regular dust baths to stay clean and healthy. Chinchillas are energetic, curious, and need plenty of space, enrichment, and proper care to thrive. Their teeth grow continuously, so chew toys and a proper diet are essential for dental health. With proper care, chinchillas can live up to 15–20 years and make incredibly loyal, adorable companions. There are two species of chinchillas: the long-tailed chinchilla (Chinchilla lanigera)) and the short-tailed chinchilla (Chinchilla brevicaudata)). However, the domestic chinchillas commonly kept as pets are believed to be hybrids of these two species. Within these hybrid populations, there are variations in color and coat type, but not true breeds in the same way as, for example, dog breeds. These furry little balls of energy come in all different color and color patterns!</p>
   </div>
 </section>
 </p>
@@ -171,14 +148,23 @@
     </div>
   </section>
 
-  <footer style="position: sticky; bottom: 0; background: inherit; padding: 1rem 0;">
-    <p>Created with ❤️ by a Chinchilla Enthusiast</p>
-  </footer>
+<section class="cta-section">
+  <div class="cta-content">
+    <h2>💜 From Dust Baths to Dream Beds</h2>
+    <p>Find everything you need to pamper your chinchilla in one place.</p>
+    <a href="#section-care"><button class="cta-btn">Let's Go! 🐾</button></a>
+  </div>
+</section>
 <div class="logout-container" style="position:center; bottom:0; padding: 1rem 0;">
   <div class="logout">
    <a href="index.html"> <span>Logout</span></a>
   </div>
 </div>
+
+
+  <footer style="position: sticky; bottom: 0; background: inherit; padding: 1rem 0;">
+    <p>Created with ❤️ by a Chinchilla Enthusiast</p>
+  </footer>
 
 </button>
   <script>
@@ -211,6 +197,8 @@
 
 <script>
   const name = localStorage.getItem('chinchillaUserName') || "friend";
+document.getElementById("user-name-display").textContent = `🐾 Welcome, ${name}!`;
+
   const welcomeMessage = document.getElementById('welcome-message');
   const messages = [
     `🐾 Welcome, ${name}!`,
