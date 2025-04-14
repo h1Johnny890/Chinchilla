@@ -252,7 +252,7 @@
     togglePassword.textContent = type === "password" ? "👁️" : "🙈";
   });
 
-  // ✅ LOGIN FORM
+<!---------------------------------------------------------------------------->
   document.getElementById('login-form').addEventListener('submit', function (event) {
     event.preventDefault();
 
@@ -265,16 +265,18 @@
       alert("Password must be at least 6 characters long and include at least 1 number and 1 symbol.");
       return;
     }
+<!---------------------------------------------------------------------------->
 
-    // ✅ Save all data
+<!---------------------------------------------------------------------------->
     localStorage.setItem('chinchillaUserName', name);
     localStorage.setItem('chinchillaUserEmail', email);
     localStorage.setItem('chinchillaUserPassword', password);
 
     window.location.href = "home.html";
   });
+<!---------------------------------------------------------------------------->
 
-  // ✅ SIGN-UP FORM
+<!---------------------------------------------------------------------------->
   document.getElementById('signup-form').addEventListener('submit', function (event) {
     event.preventDefault();
 
@@ -292,8 +294,9 @@
       alert("Password must be at least 6 characters long and include at least 1 number and 1 symbol.");
       return;
     }
+<!---------------------------------------------------------------------------->
 
-    // ✅ Save all data
+<!---------------------------------------------------------------------------->
     localStorage.setItem('chinchillaUserName', name);
     localStorage.setItem('chinchillaUserEmail', email);
     localStorage.setItem('chinchillaUserPassword', password);
