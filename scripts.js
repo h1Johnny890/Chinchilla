@@ -110,7 +110,7 @@ const catalogData = [
    category: "Food",
    section: "food",
    price: 3.99,
-   img: "stick.png.",
+   img: "stick.png",
    link: "https://www.google.com/aclk?sa=l&ai=DChsSEwilg7Pips-MAxXDmO4BHfTnN9cYACICCAEQDxoCZHo&co=1&ase=2&gclid=Cj0KCQjw2N2_BhCAARIsAK4pEkVNCD12Y575rXbft1mjrr7dZkAzWSGvupyFllHTgiKUwRpr7WgmLgYaAoxtEALw_wcB&sig=AOD64_2bjjjnIilLRMBdOFWtILQdGP5A3w&ctype=5&q=&nis=4&ved=2ahUKEwia3q_ips-MAxUBPUQIHSrJFQ8Q9aACKAB6BAgHEHU&adurl=",
    description: "Vitakraft Crunch Sticks don't just taste good: they also promote chinchillas' natural gnawing instincts to support strong, healthy teeth. The triple-baked layers make this treat last longer, with a natural wood chew center that provides hours of chewing fun long after the treat part is gone!",
 },
